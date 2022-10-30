@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+}
+/* nav 1 starts */
+
+nav{
+    background-color: rgb(22, 22, 22);
+    width: 1000px;
+    margin: auto;
+}
+nav ol{
+    text-align: center;
+    }
+nav ol li{
+    display: inline-block;
+}
+nav ol li a{
+    color: whitesmoke;
+    padding: 15px 15px;
+    display: inline-block;
+    
+    position: relative;
+    z-index: 1;
+}
+
+nav ol li a::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+nav ol li:hover a::before{
+    background-color: red;
+    width: 100%;
+}
+/* Nav 1 ends */
+
+/* nav 2 starts */
+
+#nav2{
+    background-color: rgb(22, 22, 22);
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+}
+#nav2 ol{
+    text-align: center;
+    }
+#nav2 ol li{
+    display: inline-block;
+}
+#nav ol li a{
+    color: whitesmoke;
+    padding: 15px 15px;
+    display: inline-block;
+    
+    position: relative;
+    z-index: 1;
+}
+
+#nav2 ol li a::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: rgb(174, 0, 255);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+#nav2 ol li:hover a::before{
+    background-color: rgb(140, 0, 255);
+    width: 100%;
+}
+/* nav 2 ends */
+
+/* nav 3 starts */
+#nav3{
+    background-color: rgb(120, 23, 248);
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+}
+#nav3 ol{
+    text-align: center;
+    }
+#nav3 ol li{
+    display: inline-block;
+}
+#nav3 ol li a{
+    color: whitesmoke;
+    padding: 15px 15px;
+    display: inline-block;
+    
+    position: relative;
+    z-index: 1;
+}
+
+#nav3 ol li a::before{
+    content: '';
+    width: 100%;
+    height: 0%;
+    background-color: rgb(174, 0, 255);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+#nav3 ol li:hover a::before{
+    background-color: rgb(105, 206, 118);
+    height: 100%;
+}
+/* nav 3 ends */
+
+
+  
